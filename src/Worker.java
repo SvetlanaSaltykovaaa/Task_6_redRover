@@ -1,7 +1,6 @@
-public class Worker extends Employee {
+public class Worker  {
 
-
-    int getSalary() {
-        return super.getBaseSalary();
+    public double getSalary(Employee employee) {
+        return employee.getBaseSalary();
     }
 }

@@ -1,10 +1,9 @@
 public class Employee {
 
-
     String name;
-    int baseSalary;
+    double baseSalary;
 
-    public int getBaseSalary() {
+    public double getBaseSalary() {
         return baseSalary;
     }
 
@@ -18,5 +17,9 @@ public class Employee {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getSalary(){
+        return getBaseSalary();
     }
 }

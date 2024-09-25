@@ -1,7 +1,5 @@
-public class Manager {
-
+public class Director {
     int numberOfSubordinates;
-
 
     public int getNumberOfSubordinates() {
         return numberOfSubordinates;
@@ -11,14 +9,13 @@ public class Manager {
         this.numberOfSubordinates = numberOfSubordinates;
     }
 
-
     public double getSalary(Employee employee) {
-        double salary =0;
+        double salary = 0;
         if (numberOfSubordinates == 0) {
-    salary  = employee.getBaseSalary();
-        }else {
-            salary = employee.baseSalary * 3;
+            salary = employee.getBaseSalary();
+        } else {
+            salary = employee.baseSalary * 9;
         }
-return  salary;
+        return salary;
     }
 }
